@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(222, 228, 234);
+    background-color: rgb(179, 205, 232);
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
 
@@ -24,6 +24,23 @@ strong{
     color: black;
 }
 ol{ 
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(15, 15, 158);
+}
+
+h3 { 
+    color: rgb(78, 16, 135);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+dt{ 
+    color: rgb(78, 16, 135);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+dd{ 
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(15, 15, 158);
 }
