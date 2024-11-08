@@ -1,0 +1,29 @@
+header{
+    text-align: center;
+
+
+}
+
+body{
+    background-color: rgb(227, 141, 124);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+
+dd{
+    text-align: justify;
+}
+.container{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+#Perfiles{
+    border-radius: 50%;
+}
+footer{
+    background-color: rgb(200, 156, 242);
+}
+h2{
+    font-size:large;
+}
