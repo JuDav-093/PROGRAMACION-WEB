@@ -72,3 +72,24 @@ footer{
 .spanuso{
     color: blueviolet;
 }
+
+.boton{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(42, 165, 75);
+}
+
+#botonbuscar{
+    color: rgb(211, 185, 185);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(224, 95, 179);
+
+}
