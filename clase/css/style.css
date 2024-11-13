@@ -15,11 +15,11 @@ p{
 }
 h1{
     font-size: 45px;
-    color: brown;
+    color: rgb(57, 27, 27);
 }
 h2{
-    font-size: 35px0;
-    color: blueviolet;
+    font-size: 38px;
+    color: rgb(172, 22, 67);
 }
 
 strong{
@@ -90,6 +90,6 @@ footer{
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(224, 95, 179);
+    background-color: rgb(116, 95, 224);
 
 }
