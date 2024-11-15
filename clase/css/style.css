@@ -63,9 +63,9 @@ footer{
 }
 
 .container{
-    max-width: 800px;
+    max-width: 50%;
     text-align: center;
-    margin: 0px;
+    margin: 0 auto;
 
 }
 
@@ -80,9 +80,14 @@ footer{
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(42, 165, 75);
+    background-color: rgb(133, 233, 160);
 }
 
+aside{
+    width: 15%;
+    padding: 5px;
+    float: left;
+}
 #botonbuscar{
     color: rgb(211, 185, 185);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -91,5 +96,43 @@ footer{
     border-radius: 5px;
     cursor: pointer;
     background-color: rgb(116, 95, 224);
+}
 
+div > p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+p > h6 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+aside > h2 {
+    background-color: beige;
+    justify-content: right;
+}
+
+div li {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+.flexstyle{
+    border-color: blue;
+    border-width: 6px;
+    border-style: double;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexs{
+    justify-content: left;
+}
+
+.lado{
+    justify-content: left;
 }
