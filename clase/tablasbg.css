@@ -1,0 +1,47 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7792366946778712) 0%, rgba(32,2,58,1) 4%, rgba(148,29,154,1) 53%, rgba(10,154,183,1) 96%);
+    color: aliceblue;
+}
+caption{
+    background-color: rgb(185, 154, 214);
+}
+input[type="password"] {
+    background-color: rgb(204, 168, 238);
+    border-bottom: 1px soid #003;
+    border-radius: 2px;
+    color: rgb(50, 52, 189);
+}
+input[type="email"] {
+    border: 1px;
+    outline: #003;
+    border-bottom: 1px soid #003;
+    border-radius: 1px;
+}
+
+input[type="text"]{
+    border: 1px;
+    outline: #003;
+    border-bottom: 1px soid #003;
+    border-radius: 1px;
+}
+
+::placeholder{
+    color: rgb(145, 8, 42);
+    opacity: 0.5;
+}
+input[type="text"]::placeholder{
+    color: rgb(43, 226, 86);
+}
+input[type="password"]::placeholder{
+    color: rgb(50, 27, 198);
+}
+
+#nombre::placeholder{
+    color: aquamarine;
+}
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tablasbg.css">
+    <title>Tablas</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Tablas</h1>
+        <p>La etiqueta <em>tabla</em>, es para el envio y recepcion de informacion</p>
+    </header>
+    <section>
+        <article>
+            <table frame="void" rules="rows" border="3px" cellpadding="10px" cellspacing="0px" >
+                <caption align="bottom">Los más Buscados</caption>
+                <colgroup>
+                    <col style="none">
+                    <col style="none">
+                    <col style="background-color: aquamarine;">
+                    <col style="background-color: rgb(166, 220, 245);">
+
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="2" align="center" width="300px" >Nombres</th>
+                        <!-- <th>Apellido</th> -->
+                        <th>Direccion</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr >
+                            <td>Anabel</td>
+                            <td>Davila</td>
+                            <td>Cascales</td>
+                            <td>0987102222</td>
+                        </tr>
+                        <tr>
+                            <td>Pamela</td>
+                            <td>Chipe</td>
+                            <td>Manta</td>
+                            <td>0987102148</td>
+                        </tr>
+                        <tr>
+                            <td>Maribel</td>
+                            <td>Ochoa</td>
+                            <td>Coca</td>
+                            <td>0987102625</td>
+                        </tr>
+                        <tr>
+                            <td>Josue</td>
+                            <td>Marin</td>
+                            <td>Tulcan</td>
+                            <td>0987102621</td>
+                        </tr>
+                        <tr>
+                            <td>Kevin</td>
+                            <td>Cabezas</td>
+                            <td>Quito</td>
+                            <td>0987157222</td>
+                        </tr>
+                </tbody>
+                <tfoot>
+                        <td>total</td>
+                        <td>total</td>
+                        <td>total</td>
+                        <td>sum</td>
+                </tfoot>
+            </table>
+            <br>
+            <table   border="3px" cellpadding="10px" cellspacing="0px">
+                <caption align="center">Los más Buscados</caption>
+                <colgroup>
+                    <col style="none">
+                    <col style="background-color: aquamarine;">
+                    <col style="background-color: rgb(166, 220, 245);">
+
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th align="center" >Nombres</th>
+                        <th>Apellido</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr >
+                            <td rowspan="4" >Anabel</td>
+                            <td>Davila</td>
+                            <td rowspan="4" >0987102222</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Pamela</td> -->
+                            <td>Chipe</td>
+                            
+                        </tr>
+                        <tr>
+                            <!-- <td>Maribel</td> -->
+                            <td>Ochoa</td>
+                            
+                        </tr>
+                        <tr>
+                            <!-- <td>Kevin</td> -->
+                            <td>Cabezas</td>
+                            
+                        </tr>
+                </tbody>
+                <tfoot>
+                        <!-- <td>total</td>
+                        <td>total</td>
+                        <td>total</td> -->
+                </tfoot>
+            </table>
+        </article>
+    </section>
+    <br>
+    <article>
+        <br>
+        <form action="/submit" method="post">
+            <label>Nombre: </label>
+            <input type="text" id="nombre" minlength="5" maxlength="9" name="nombre" placeholder="nombre" required><br>
+            <label>Correo: </label>
+            <input type="email" id="email" name="email" placeholder="correo"><br>
+            <label>Contrasena: </label>
+            <input type="password" maxlength="7" id="password" name="password" placeholder="contrasena"><br>
+            <laber>Tipo Persona:</laber>
+            <select name="tipo" id="tipo">
+                <option value="estudiante">Estudiante</option>
+                <option value="Docente">Docente</option>
+                <option value="Administrativo">Administrativo</option>
+            </select>
+            <br>
+            <label>observacion</label>
+            <textarea placeholder="escribe aqui" name="taObservacion"></textarea>
+            <br>
+            <input type="submit" value="Enviar datos">
+        </form>
+
+    </article>
+</body>
+</html>
