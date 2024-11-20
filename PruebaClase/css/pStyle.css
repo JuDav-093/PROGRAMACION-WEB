@@ -1,0 +1,222 @@
+/* --------- */
+#loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #be72721b;
+}
+
+.login{
+    width: 300px;
+    background: rgba(226, 198, 171, 0.665);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+input[type="text"]{
+    color: rgb(50, 52, 189);
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="password"] {
+    color: rgb(50, 52, 189);
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login form button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #f45c43, #eb3349);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* --------- */
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #3aab4b;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+h3 {
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    background: rgb(251,251,251);
+    background: linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(134,141,152,1) 100%, rgba(120,120,120,1) 100%, rgba(0,0,0,1) 100%);
+
+}
+
+.contenido {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    float: right;
+    text-align:left ;
+}
+
+.categoria {
+    width: 30%;
+    height: auto;
+    float: left;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.803);
+    justify-content: center;
+}
+
+.footer {
+    background-color: #042209b0;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    bottom: 0;
+}
+
+.btnComprar{
+    width: 80px;
+}
+
+button {
+    background-color: #3aab4b;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: 4px;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#h-categorias {
+    color: white;
+    text-align: center;
+    padding: auto;
+}
+
+.aside1 {
+    width: 20%;
+    height: 500px;
+    height: 100px;
+    background-color: #ab3a3a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/* --------- */
+
+
+
+.inventario {
+    margin-top: 20px;
+}
+.inventario {
+    width: 100%;
+    border-collapse: collapse;
+}
+table{
+    text-align: center;  
+}
+.caption{
+    color: #111612;
+}
+
+.btnInvent{
+    width: 100px;
+    padding: 10px;
+    background: linear-gradient(to right, #43f4a7a6, #5beb33);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+/* --------- */
+.servicioC {
+    width: 22%;
+    height: 290px;
+    background-color: rgb(238, 161, 201);
+    text-align: center;
+    padding: 12px;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    border-radius: 20px;
+}
+
+.servicioC button {
+    width: 90%;
+}
+
+.servicioC img {
+    margin: 2px;
+}
+
+.servicioC textarea {
+    width: 90%;
+    height: 60px;
+    margin: 10px;
+    resize: none;
+}
+
+.servicioC textarea::placeholder {
+    text-align: center;
+}
+
+.sc-title {
+    background-color: #944fba9a;
+    border-radius: 10px;
+}
+
+.sc-title p {
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
