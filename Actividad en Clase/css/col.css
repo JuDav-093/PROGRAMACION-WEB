@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(55, 82, 203);
+    text-align: center;
+    padding: 20px;
+}
+.nav{
+    background-color: rgb(174, 136, 240);
+    text-align: center;
+    padding: 10px;
+    color: rgb(243, 230, 230);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.nav li {
+    margin: 0 1rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url("../img/fondo.jpg");
+}
+.servicioC {
+    width: 160px;
+    height:100px;
+    background-color: rgb(249, 247, 248);
+    text-align: center;
+    padding: 10px;
+    float: right;
+    right: 20px;
+    border-radius: 15px;
+}
+
+.container2{
+    box-shadow: #000000 0px 0px 50px;
+    margin: auto;
+    margin-top: 50px;
+    height: 700px;
+    background-color: #93afcb;
+    width: 800px;
+    border-radius: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+.article {
+    background: white;
+    border: 1px solid #ccc;
+    display: flex;
+    flex: 1 1 100%;
+    padding: 1rem;
+}
+.date {
+    background-color: #0078d4;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    width: 80px;
+    height: 80px;
+}
+
+footer{
+    background-color: rgba(22, 24, 22, 0.595);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    align-items: end;
+    justify-content: end;
+}
+.content {
+    flex: 1;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.images img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.sidebar {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin: 1rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.323);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

@@ -14,22 +14,70 @@ body{
     height: 700px;
     background-color: #ddd;
     width: 500px;
-
+    border-radius: 9px;
 }
+
 .Cheader{
     height: 350px;
     background-image: url(../fimg/card.jpg);
-
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: center;
 }
+.Cimg{
+    height: 250px;
+    transition: transform 0.5s ease;
+}
+.Cheader h2 {
+    position: absolute;
+    color: transparent;
+    z-index: 1;
+}
+.precio{
+    color: #4278ee;
+    font-weight: bold;
+    padding: 5px 10px 0px 0px;
+    font-size: 25px;
+}
+
+.Cheader h2:hover {
+    position: absolute;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Cheader h2:hover ~ .Cimg {
+    filter: brightness(0.5);
+    transform: translateX(10px);
+}
+
 h4{
     color: rgb(97, 94, 94);
 }
-.Ccontent{
+.Cbodyt{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 40px;
 }
+.Ccontent{
+    display: flex;
+    justify-content: space-between;
+}
 .size{
     margin-top: 50px;   
+}
+body:has(.Ctitulo:hover){
+    background-color: black;
+    transition: background-color 0.6s ease;
+
+}
+.precio{
+    color: #4977db;
+    font-weight: bold;
+    padding: 5px 10px 0px 0px;
 }
 .color{
     margin-top: 40px;
@@ -37,33 +85,37 @@ h4{
 .red{
     border: 1px solid red;
     background-color: red;
+    color: transparent;
     border-radius: 50%;
-    color: red;
     width: 10px;
     height: 10px;
+    display: inline-block;
 }
 
 .azul{
     border: 1px solid blue;
     background-color: blue;
+    color: transparent;
     border-radius: 100%;
-    color: blue;
     width: 10px;
     height: 10px;
+    display: inline-block;
 }
 .blanco{
     border: 1px solid white;
     background-color: white;
+    color: transparent;
     border-radius: 50%;
-    color: white;
     width: 10px;
     height: 10px;
+    display: inline-block;
 }
 .verde{
     border: 1px solid green;
     background-color: green;
-    border-radius: 50%;
-    color: green;
+    color: transparent;
+    border-radius: 100%;
     width: 10px;
     height: 10px;
+    display: inline-block;
 }
