@@ -1,0 +1,29 @@
+/* Estilo base para la página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    transition: background-color 0.5s ease; /* Transición para el cambio de color */
+}
+
+/* Fondo para pantallas pequeñas (ancho <= 600px) */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Fondo para pantallas medianas (601px <= ancho <= 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* Fondo para pantallas grandes (ancho > 900px) */
+@media (min-width: 901px) {
+    body {
+        background-color: rgb(84, 228, 65);
+    }
+}
