@@ -53,3 +53,58 @@ console.log(maximo);
 
 //VENTAJAS
 
+
+
+//AGREGAR elementos dentro de un array
+// push() agrega uno o mas elementos al dinal del arreglo
+
+let p = [1, 2, 3, 4]
+p.push(5);
+console.log(p);
+
+
+//unshit() agrega 1 o mas al inicio del array
+let q = [1, 2, 3, 4]
+q.unshift(5);
+console.log(q);
+
+//splice() agrega o elimina elementos en cualquier posicion dentro del array.
+let u = [1, 2, 3, 4]
+u.splice(3, 0, 5,); //agrega el num 5 en la posicion 1 sin eliminar elementos
+console.log(u);
+
+//MODIFICAR elementos dentro de un array
+//podemos acceder a un elemento directamente por su indice y modificarlo
+let i = ['Ana', 'Juan', 'Pedro', 'Jose'];
+i[2] = 'Maria'; //modifica el elemento en su posicion
+console.log(i);
+
+//si deseamos modificar el arreglo de fomra inmutable(sin cambiar en su contexto) se puede utilizar el metodo map()
+// el metodo map() crea un nuevo arreglo con los valores modificados
+//let arregloMap = ['Azul', 'Naranja', 'Amarillo', 'Negro'];
+let arregloMap = [10, 20, 33, 26];
+let arregloNuevo = arregloMap.map(num => num === 10 ? 5 : num);
+console.log(arregloNuevo);
+
+//splice() tambien se puede usar 
+let z = [1, 2, 3];
+z.splice(1, 1, 5);
+console.log(z)
+
+//ELIMINAR elementos de un array
+//pop() elimina el ultimo elementp del arreglo
+let arregloE =  ['Azul', 'Naranja', 'Amarillo', 'Negro'];
+arregloE.pop();
+console.log(arregloE);
+
+//Shift() elimina el primer elemento de un array
+let arregloS =  ['Azul', 'Naranja', 'Amarillo', 'Negro'];
+arregloS.pop();
+console.log(arregloS);
+
+//splice() para eliminar cualquier elemento dentro de un arreglo
+let arregloSp =  ['Azul', 'Naranja', 'Amarillo', 'Negro'];
+arregloSp.splice(0, 1);
+console.log(arregloSp);
+
+
