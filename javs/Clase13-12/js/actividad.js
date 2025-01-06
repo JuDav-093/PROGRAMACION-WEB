@@ -1,4 +1,4 @@
-// Función declarada: calcularPromedio
+// Función calcularPromedio
 function calcularPromedio(a, b, c) {
     if (![a, b, c].every(num => typeof num === 'number')) {
       console.log("Solo Puede ingresar números.");
@@ -7,7 +7,7 @@ function calcularPromedio(a, b, c) {
     return (a + b + c) / 3;
   }
   
-  // Función expresada: determinarMayor
+  // Función expresada
   const determinarMayor = function(a, b) {
     if (![a, b].every(num => typeof num === 'number')) {
       console.log("Ambos parámetros deben ser números.");
@@ -16,7 +16,7 @@ function calcularPromedio(a, b, c) {
     return a > b ? a : b;
   };
   
-  // Función flecha: esPar
+  // Función flecha
   const esPar = num => {
     if (typeof num !== 'number') {
       console.log("Solo se puede ingresar números.");
