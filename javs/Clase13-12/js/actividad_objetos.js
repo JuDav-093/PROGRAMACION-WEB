@@ -3,7 +3,7 @@ let inventario = {
     producto1: { nombre: 'Manzanas', precio: 2.5, cantidad: 50 },
     producto2: { nombre: 'Naranjas', precio: 3.0, cantidad: 30 },
     producto3: { nombre: 'Plátanos', precio: 1.2, cantidad: 100 },
-    producto4: { nombre: 'Peras', precio: 2.8, cantidad: 20 },
+    producto4: { nombre: 'Peras', precio: 1.8, cantidad: 20 },
 
     ventaProducto: function (nombre, cantidad) {
         for (let clave in this) {
