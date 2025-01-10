@@ -37,3 +37,20 @@ function calcularPromedio(a, b, c) {
     }
   })();
   
+
+
+
+
+
+
+  class Conductor {
+    #licencia; 
+    constructor(nombre, licencia) {
+      this.nombre = nombre;
+      this.#licencia = licencia;
+      this.rutas = []; // Almacena las rutas asignadas
+    }
+  }
+
+
+  

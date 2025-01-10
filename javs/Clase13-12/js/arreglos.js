@@ -56,7 +56,7 @@ console.log(maximo);
 
 
 //AGREGAR elementos dentro de un array
-// push() agrega uno o mas elementos al dinal del arreglo
+// push() agrega uno o mas elementos al final del arreglo
 
 let p = [1, 2, 3, 4]
 p.push(5);
