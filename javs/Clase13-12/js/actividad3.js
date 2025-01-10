@@ -1,6 +1,6 @@
-// Clase Conductor
+
 class Conductor {
-    #licencia; // Propiedad privada
+    #licencia; 
     constructor(nombre, licencia) {
       this.nombre = nombre;
       this.#licencia = licencia;
@@ -18,9 +18,9 @@ class Conductor {
     }
   }
   
-  // Clase Vehiculo
+
   class Vehiculo {
-    #estado; // Propiedad privada
+    #estado; 
     constructor(modelo, placa) {
       this.modelo = modelo;
       this.placa = placa;
@@ -46,7 +46,7 @@ class Conductor {
     }
   }
   
-  // Clase Ruta
+
   class Ruta {
     constructor(origen, destino, tiempoEstimado) {
       this.origen = origen;
@@ -59,7 +59,7 @@ class Conductor {
     }
   }
   
-  // Clase ConductorVIP (hereda de Conductor)
+  // hereda de Conductor
   class ConductorVIP extends Conductor {
     constructor(nombre, licencia) {
       super(nombre, licencia);
@@ -73,15 +73,15 @@ class Conductor {
   }
   
   // Ejemplo de Uso
-  // Crear conductores
+  
   const conductor1 = new Conductor('Juan Pérez', 'ABC123');
   const conductorVIP1 = new ConductorVIP('María López', 'XYZ789');
   
-  // Crear vehículos
+  
   const vehiculo1 = new Vehiculo('Toyota Corolla', 'XYZ123');
   const vehiculo2 = new Vehiculo('Honda Civic', 'ABC456');
   
-  // Crear y asignar rutas
+  
   const ruta1 = new Ruta('Centro', 'Norte', 30);
   const ruta2 = new Ruta('Sur', 'Este', 45);
   
