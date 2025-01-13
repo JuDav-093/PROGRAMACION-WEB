@@ -1,3 +1,4 @@
+//Declaracion JS
 var nombre = "Ricardo";
 var edad;
 edad = 25;
@@ -14,7 +15,7 @@ console.log(z);
 /*Ejemplos tipos de datos de JavaS */
 //tipos de Datos String
 let nombrePersona = "Ricardo";
-console.log(nombre); 'Ricardo'
+console.log(nombre);
 let nombrePersona1;
 nombrePersona1 = "Ricardo";
 console.log(nombrePersona1);
@@ -30,7 +31,7 @@ let persona = {
     edad: 25
 }
 
-console.log(persona); {nombre: 'Ricardo', apellido: 'Vargas', edad: 25}
+console.log(persona);
 
 //Tipo de dato Tupeof
 let let1 = "Ricardo";
@@ -131,40 +132,40 @@ let numero5 = numero3 + numero4;
 //Incremento
 //Pre incremento primero incrementa luego asigna
 numero5 = ++numero3;
-console.log(numero3); 4 
-console.log(numero5); 4
+console.log(numero3);
+console.log(numero5); 
 
 //post incremento
 numero5 = numero4++;
-console.log(numero4); 3
-console.log(numero5); 2
+console.log(numero4); 
+console.log(numero5); 
 
 //Decremento 
 //Pre decremento primero incrementa luego asigna
 numero5 = --numero3;
-console.log(numero3); 3 
-console.log(numero5); 3
+console.log(numero3);  
+console.log(numero5); 
 
 //post decremento
 numero5 = numero4--;
-console.log(numero4); 2
-console.log(numero5); 3
+console.log(numero4); 
+console.log(numero5);
 
 //Precedencia de los operadores
 // Los operadores se ejecutan de izquierda a derecha o de derecha a izq segun el caso
 
 let pre1 = 2, pre2 = 3, pre3 = 4, pre4 = 5;
-let pre5 = (pre1 + pre2)* pre3;
-console.log(pre5); 20
+let pre5 = (pre1 + pre2) * pre3;
+console.log(pre5); 
 
-let pre6 = pre3(pre1 + pre2)
-console.log(pre6); 20
+let pre6 = pre3 * (pre1 + pre2);
+console.log(pre6);
 
-let pre7 = pre1 + pre2 * pre3;
-console.log(pre7); 14
+let pre7 = pre1 + (pre2 * pre3);
+console.log(pre7);
 
-let pre8 = (pre1 * pre3) + pre2 / pre4 / (pre1 + pre2);
-console.log(pre8); 11
+let pre8 = (pre1 * pre3) + (pre2 / pre4) / (pre1 + pre2);
+console.log(pre8);
 
 //Operadores de asignacion
 
