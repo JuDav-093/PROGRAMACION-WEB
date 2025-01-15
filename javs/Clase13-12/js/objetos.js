@@ -309,3 +309,22 @@ let arreglo = ['ing', '3434343']
 console.log(personaAplay1.nombreCompleto.apply(personaAplay2, arreglo));
 console.log(personaAplay1.nombreCompleto.apply(personaAplay2, ['ing', '3434343']));
 
+//Modificador denominado static  se utiliza para acceder directamente a traves de la clase
+//los metodos o propiedades estaticas (static) no requieren que se creen una instancia de la clase para ser utilizados
+//ejemplo
+
+class Calculadora{
+    //Met STATIC
+    static sumar(a,b)
+    {
+        return a + b;
+    }
+}
+
+//El acceso al metodo estatico directamente de la clase es asi:
+console.log(Calculadora.sumar(5,3));
+//no se puede acceder desde una instancia de esta forma 
+const calc = new Calculadora();
+console.log(calc.sumar(5,3));
+//CONCLUSION el modificador static en js es una herraienta clave para def func y propiedades compartidas 
+//sin necesidad de crear algun tipo de instancia de una clas
