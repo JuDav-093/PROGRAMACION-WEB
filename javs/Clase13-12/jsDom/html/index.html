@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DOM en JavaScript</title>
+</head>
+<body>
+   <form id="formulario">
+    Nombre: <input type="text" name="nombre" value="Juan">
+    <br>
+    Apellido: <input type="text" name="apellido" value="Valdez">
+    <br>
+    Correo: <input type="email" name="email" value="juanval@gmail.com">
+   </form>
+   <button id="btnMostrar" onclick="mostrarVal()" type="submit"> mostrar </button>
+   <br>
+   <div id="valores">
+
+   </div>
+    <script>
+        function mostrarVal(){
+            let formulario = document.forms['formulario'];
+            let = texto = '';
+
+            for(const element of formulario){
+                texto =+ element.value + '<br>';
+            }
+
+            document.getElementById('valores').innerHTML = texto;
+
+            let nombre = formulario ['nombre'];
+            let apellido = formulario ['apellido'];
+            let email = formulario ['email'];
+            texto = nombre.value + '<br>'
+
+        }
+        
+
+
+    </script>
+</body>
+</html> 

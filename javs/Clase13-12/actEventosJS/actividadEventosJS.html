@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/actEventosJS/actividad.css">
+    <title>Panel de Control Interactivo</title>
+    
+</head>
+<body >
+    <h1 id="main-title">Panel de Control Interactivo</h1>
+
+    <button id="toggle-panel-btn">Mostrar Panel</button>
+
+    <div id="config-panel">
+        <!-- Cambiar el tema de la página -->
+        <label for="theme-select">Selecciona un tema:</label>
+        <select id="theme-select">
+            <option value="white">Claro</option>
+            <option value="black">Oscuro</option>
+            <option value="lightblue">Azul</option>
+        </select>
+        <br><br>
+
+        
+        <!-- Actualizar título dinámicamente -->
+        <label for="title-input">Actualizar título:</label>
+        <input type="text" id="title-input" placeholder="Escribir nuevo título">
+        <br><br>
+
+        <!-- Habilitar/Deshabilitar área de comentarios -->
+        <label>
+            <input type="checkbox" id="comments-toggle"> Habilitar comentarios
+        </label>
+        <br><br>
+        <textarea id="comments-area" rows="4" cols="30" placeholder="Escribe un comentario..." disabled></textarea>
+        <br><br>
+
+        <!-- Agregar o Eliminar elementos  -->
+        <label for="item-input">Agregar a la lista:</label>
+        <input type="text" id="item-input" placeholder="Escribe un nuevo elemento">
+        <button id="add-item-btn">Agregar</button>
+        <ul id="item-list">
+            <li>Elemento a</li>
+            
+        </ul>
+    </div>
+
+    <script>
+        // Mostrar/Ocultar el panel de configuración
+        const togglePanelBtn = document.getElementById('toggle-panel-btn');
+        const configPanel = document.getElementById('config-panel');
+
+        togglePanelBtn.addEventListener('click', () => {
+            if (configPanel.style.display === 'none' || configPanel.style.display === '') {
+                configPanel.style.display = 'block';
+                togglePanelBtn.textContent = 'Ocultar Panel';
+            } else {
+                configPanel.style.display = 'none';
+                togglePanelBtn.textContent = 'Mostrar Panel';
+            }
+        });
+
+        
+        const themeSelect = document.getElementById('theme-select');
+        themeSelect.addEventListener('change', (event) => {
+            document.body.style.backgroundColor = event.target.value;
+        });
+
+        // Actualizar el título dinámicamente
+        const titleInput = document.getElementById('title-input');
+        const mainTitle = document.getElementById('main-title');
+        titleInput.addEventListener('input', (event) => {
+            mainTitle.textContent = event.target.value || 'Panel de Control Interactivo';
+        });
+
+        // Habilitar/Deshabilitar área de comentarios
+        const commentsToggle = document.getElementById('comments-toggle');
+        const commentsArea = document.getElementById('comments-area');
+        commentsToggle.addEventListener('change', (event) => {
+            commentsArea.disabled = !event.target.checked;
+        });
+
+        // Agregar y eliminar elementos de la lista
+        const itemInput = document.getElementById('item-input');
+        const addItemBtn = document.getElementById('add-item-btn');
+        const itemList = document.getElementById('item-list');
+
+        // Agregar elemento
+        addItemBtn.addEventListener('click', () => {
+            const newItemText = itemInput.value.trim();
+            if (newItemText) {
+                const newItem = document.createElement('li');
+                newItem.textContent = newItemText;
+                itemList.appendChild(newItem);
+                itemInput.value = '';
+            }
+        });
+
+        // Delegación de eventos para eliminar elementos
+        itemList.addEventListener('click', (event) => {
+            if (event.target.tagName === 'LI') {
+                itemList.removeChild(event.target);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DOM en JavaScript</title>
+    <style>
+        .title{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+   <h1 id="titulo1" class="title"> Cambio de Imagenes</h1>
+
+   <!-- <button id="btnMostrar" onclick="mostrar()" type="submit"> mostrar </button> -->
+   <br>
+   <img src="..." alt="" alt="img" >
+   <img id="imagen" src="/jsDom/zapato.avif" alt="Imagen" style="width: 300px; height: 200px;">
+   <div id="valores">
+
+   </div>
+    <script>
+        const imagenes = ["/jsDom/zapato.avif", "/jsDom/wht.webp", "/jsDom/login.jpg"];
+        let indice = 0;
+
+        setInterval(() => {
+         indice = (indice + 1) % imagenes.length;
+        document.getElementById("imagen").src = imagenes[indice];
+        }, 3000); // Cambia cada 3 segundos
+      
+        
+    </script>
+</body>
+</html> 
